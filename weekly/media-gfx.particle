@@ -1,0 +1,297 @@
+# Entropy Matter, Automated Entropy Packages Build Service, example spec file
+
+# List of packages required to be built.
+# Comma separated, example: app-foo/bar, bar-baz/foo
+# Mandatory, cannot be empty
+packages:
+	media-gfx/DFBPoint,
+	media-gfx/aewan,
+	media-gfx/aftershotpro,
+	media-gfx/album,
+	media-gfx/aoi,
+	media-gfx/aqsis,
+	media-gfx/argyllcms,
+	media-gfx/autopano-sift-C,
+	media-gfx/autotrace,
+	media-gfx/aview,
+	media-gfx/blender,
+	media-gfx/bootsplash-themes,
+	media-gfx/brlcad,
+	media-gfx/cellwriter,
+	media-gfx/comical,
+	media-gfx/comix,
+	media-gfx/converseen,
+	media-gfx/crwinfo,
+	media-gfx/cthumb,
+	media-gfx/darktable,
+	media-gfx/dawn,
+	media-gfx/dcraw,
+	media-gfx/digikam,
+	media-gfx/dispcalgui,
+	media-gfx/dpic,
+	media-gfx/duhdraw,
+	media-gfx/ebdftopcf,
+	media-gfx/enblend,
+	media-gfx/engauge,
+	media-gfx/eog,
+	media-gfx/esci-interpreter-gt-s80,
+	media-gfx/exact-image,
+	media-gfx/exif,
+	media-gfx/exiftags,
+	media-gfx/exiv2,
+	media-gfx/f-spot,
+	media-gfx/fbgrab,
+	media-gfx/fbida,
+	media-gfx/fblogo,
+	media-gfx/fbv,
+	media-gfx/feh,
+	media-gfx/figurine,
+	media-gfx/flam3,
+	media-gfx/fondu,
+	media-gfx/fontforge,
+	media-gfx/fontypython,
+	media-gfx/fotowall,
+	media-gfx/fotoxx,
+	media-gfx/freecad,
+	media-gfx/geeqie,
+	media-gfx/gfxboot,
+	media-gfx/gif2png,
+	media-gfx/gifsicle,
+	media-gfx/gimageview,
+	media-gfx/gimmage,
+	media-gfx/gimp,
+	media-gfx/gliv,
+	media-gfx/gmic,
+	media-gfx/gnofract4d,
+	media-gfx/gnome-font-viewer,
+	media-gfx/gnome-raw-thumbnailer,
+	media-gfx/gnome-screenshot,
+	media-gfx/gnome-specimen,
+	media-gfx/gozer,
+	media-gfx/gphoto2,
+	media-gfx/gpicview,
+	media-gfx/gqview,
+	media-gfx/graphicsmagick,
+	media-gfx/graphite2,
+	media-gfx/graphviz,
+	media-gfx/greycstoration,
+	media-gfx/grub-splashes,
+	media-gfx/gscan2pdf,
+	media-gfx/gthumb,
+	media-gfx/gtkam,
+	media-gfx/gtkimageview,
+	media-gfx/hugin,
+	media-gfx/icon-slicer,
+	media-gfx/icoutils,
+	media-gfx/igal,
+	media-gfx/imagemagick,
+	media-gfx/inkscape,
+	media-gfx/iscan,
+	media-gfx/iscan-data,
+	media-gfx/iscan-plugin-gt-f500,
+	media-gfx/iscan-plugin-gt-f670,
+	media-gfx/iscan-plugin-gt-f720,
+	media-gfx/iscan-plugin-gt-f730,
+	media-gfx/jhead,
+	media-gfx/jp2a,
+	media-gfx/jpeg2ps,
+	media-gfx/jpeginfo,
+	media-gfx/jpegoptim,
+	media-gfx/jpegpixi,
+	media-gfx/jpegtoavi,
+	media-gfx/kcoloredit,
+	media-gfx/kfax,
+	media-gfx/kflickr,
+	media-gfx/kgrab,
+	media-gfx/kgraphviewer,
+	media-gfx/kiconedit,
+	media-gfx/kphotoalbum,
+	media-gfx/kpovmodeler,
+	media-gfx/kuickshow,
+	media-gfx/librecad,
+	media-gfx/llgal,
+	media-gfx/luminance-hdr,
+	media-gfx/mapivi,
+	media-gfx/mate-image-viewer,
+	media-gfx/metapixel,
+	media-gfx/mirage,
+	media-gfx/mkgallery,
+	media-gfx/monica,
+	media-gfx/mypaint,
+	media-gfx/nvidia-cg-toolkit,
+	media-gfx/nvidia-texture-tools,
+	media-gfx/opcion,
+	media-gfx/openclipart,
+	media-gfx/opencsg,
+	media-gfx/openexr_viewers,
+	media-gfx/openmesh,
+	media-gfx/openscad,
+	media-gfx/optipng,
+	media-gfx/paint-mono,
+	media-gfx/pdf2svg,
+	media-gfx/pencil,
+	media-gfx/peps,
+	media-gfx/phatch,
+	media-gfx/photoprint,
+	media-gfx/pictureflow,
+	media-gfx/pinta,
+	media-gfx/pixie,
+	media-gfx/pngcheck,
+	media-gfx/pngcrush,
+	media-gfx/pngrewrite,
+	media-gfx/pngtoico,
+	media-gfx/pngtools,
+	media-gfx/pornview,
+	media-gfx/potrace,
+	media-gfx/povray,
+	media-gfx/povtree,
+	media-gfx/pqiv,
+	media-gfx/pqstego,
+	media-gfx/propaganda,
+	media-gfx/psftools,
+	media-gfx/pstoedit,
+	media-gfx/pydot,
+	media-gfx/qingy-themes,
+	media-gfx/qiv,
+	media-gfx/qosmic,
+	media-gfx/qrencode,
+	media-gfx/rawstudio,
+	media-gfx/rawtherapee,
+	media-gfx/ristretto,
+	media-gfx/rotoscope,
+	media-gfx/sam2p,
+	media-gfx/sane-backends,
+	media-gfx/sane-frontends,
+	media-gfx/scantailor,
+	media-gfx/scrot,
+	media-gfx/shared-color-profiles,
+	media-gfx/shotwell,
+	media-gfx/simple-scan,
+	media-gfx/smile,
+	media-gfx/splash-themes-gentoo,
+	media-gfx/splash-themes-livecd,
+	media-gfx/splash-themes-livecd,
+	media-gfx/splash-themes-livecd,
+	media-gfx/splash-themes-livecd,
+	media-gfx/splash-themes-livecd,
+	media-gfx/splash-themes-livecd,
+	media-gfx/splashutils,
+	media-gfx/springgraph,
+	media-gfx/svg2pdf,
+	media-gfx/swftools,
+	media-gfx/synfig,
+	media-gfx/synfigstudio,
+	media-gfx/transfig,
+	media-gfx/truevision,
+	media-gfx/tuxpaint,
+	media-gfx/tuxpaint-stamps,
+	media-gfx/ufraw,
+	media-gfx/uniconvertor,
+	media-gfx/viewer,
+	media-gfx/viewnior,
+	media-gfx/wally,
+	media-gfx/wings,
+	media-gfx/xaralx,
+	media-gfx/xfig,
+	media-gfx/xli,
+	media-gfx/xsane,
+	media-gfx/xsane-gimp,
+	media-gfx/xsvg,
+	media-gfx/xv,
+	media-gfx/xzgv,
+	media-gfx/yafaray,
+	media-gfx/zbar:0
+
+# Enforce stable or unstable packages on emerge.
+# yes = only stable packages are accepted
+# no  = both stable and unstable packages are accepted
+# inherit = inherit portage make.conf.* settings for ACCEPT_KEYWORDS
+# Valid values are either "yes" or "no", "inherit"
+# Default is: inherit
+stable: inherit
+
+# Entropy repository where to commit packages
+# Mandatory, cannot be empty
+repository: rogentos-testing
+
+# Provide custom build arguments to Portage.
+# Default is: --verbose --nospinner
+build-args: --verbose --oneshot --nospinner --quiet-build=y --quiet-fail --fail-clean=y --complete-graph
+
+# Allow Source Package Manager (Portage) repository change?
+# Valid values are either "yes" or "no"
+# Default is: no
+spm-repository-change: no
+
+# In case of Source Package Manager repository change, allow
+# execution if the original repository does not contain
+# the package anymore?
+# Valid values are either "yes" or "no"
+# Default is: no
+spm-repository-change-if-upstreamed: yes
+
+# Allow compiling package even if it's not actually installed on system?
+# Valid values are either "yes" or "no"
+# Default is: no
+not-installed: no
+
+# Allow dependencies to be pulled in?
+# Valid values are either "yes" or "no"
+# Default is: no
+dependencies: yes
+
+# Allow package downgrade?
+# Valid values are either "yes" or "no"
+# Default is: no
+downgrade: no
+
+# Allow package rebuild?
+# Valid values are either "yes" or "no"
+# Default is: no
+rebuild: no
+
+# Make possible to continue if one or more packages fail to build?
+# Valid values are either "yes" or "no"
+# Default is: no
+keep-going: yes
+
+# Allow new USE flags?
+# Valid values are either "yes" or "no"
+# Default is: no
+new-useflags: yes
+
+# Allow removed USE flags?
+# Valid values are either "yes" or "no"
+# Default is: no
+removed-useflags: yes
+
+# Package pre execution script hook
+# Valid value is path to executable file
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# pkgpre: /home/fabio/repos/entropy/services/matter_examples/pkgpre.sh
+
+# Package build post execution script hook, executed for each package
+# Valid value is path to executable file
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# pkgpost: /home/fabio/repos/entropy/services/matter_examples/pkgpost.sh
+
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# MATTER_PORTAGE_FAILED_PACKAGE_NAME = exact name (atom, CPV) of the failing
+# package, the one that triggered the buildfail hook.
+# MATTER_PORTAGE_REPOSITORY = Portage repository from where the package
+# comes from
+# MATTER_PORTAGE_BUILD_LOG_DIR = directory containing all the build logs of
+# the failed package
+buildfail: /particles/hooks/buildfail.sh
+
+# For more info regarding exported environment variables, please see:
+# matter --help

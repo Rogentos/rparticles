@@ -1,0 +1,145 @@
+# Entropy Matter, Automated Entropy Packages Build Service, example spec file
+
+# List of packages required to be built.
+# Comma separated, example: app-foo/bar, bar-baz/foo
+# Mandatory, cannot be empty
+packages:
+	net-p2p/amule,
+	net-p2p/bitcoin-qt,
+	net-p2p/bitcoind,
+	net-p2p/bittorrent,
+	net-p2p/btpd,
+	net-p2p/createtorrent,
+	net-p2p/ctcs,
+	net-p2p/ctorrent,
+	net-p2p/dbhub,
+	net-p2p/dclib,
+	net-p2p/deluge,
+	net-p2p/ed2k_hash,
+	net-p2p/eiskaltdcpp,
+	net-p2p/freenet,
+	net-p2p/frostwire,
+	net-p2p/gift,
+	net-p2p/gift-ares,
+	net-p2p/gift-fasttrack,
+	net-p2p/gift-gnutella,
+	net-p2p/gift-openft,
+	net-p2p/giftcurs,
+	net-p2p/giftui,
+	net-p2p/gtk-gnutella,
+	net-p2p/gtorrentviewer,
+	net-p2p/i2p,
+	net-p2p/kmldonkey,
+	net-p2p/ktorrent,
+	net-p2p/linuxdcpp,
+	net-p2p/microdc,
+	net-p2p/microdc2,
+	net-p2p/mktorrent,
+	net-p2p/mktorrent-borg,
+	net-p2p/mldonkey,
+	net-p2p/nicotine+,
+	net-p2p/opendchub,
+	net-p2p/phex,
+	net-p2p/qbittorrent,
+	net-p2p/retroshare,
+	net-p2p/rtorrent,
+	net-p2p/torrent-search,
+	net-p2p/torrentinfo,
+	net-p2p/transmission,
+	net-p2p/transmission-base,
+	net-p2p/transmission-cli,
+	net-p2p/transmission-daemon,
+	net-p2p/transmission-gtk,
+	net-p2p/transmission-qt4,
+	net-p2p/tribler,
+	net-p2p/tvrss,
+	net-p2p/valknut,
+	net-p2p/vuze,
+	net-p2p/vuze-coreplugins,
+	net-p2p/yaggui,
+
+# Entropy repository where to commit packages
+# Mandatory, cannot be empty
+repository: rogentos-testing
+
+# Provide custom build arguments to Portage.
+# Default is: --verbose --nospinner
+build-args: --verbose --oneshot --nospinner --quiet-build=y --quiet-fail --fail-clean=y --complete-graph
+
+# Allow Source Package Manager (Portage) repository change?
+# Valid values are either "yes" or "no"
+# Default is: no
+spm-repository-change: no
+
+# In case of Source Package Manager repository change, allow
+# execution if the original repository does not contain
+# the package anymore?
+# Valid values are either "yes" or "no"
+# Default is: no
+spm-repository-change-if-upstreamed: yes
+
+# Allow compiling package even if it's not actually installed on system?
+# Valid values are either "yes" or "no"
+# Default is: no
+not-installed: no
+
+# Allow dependencies to be pulled in?
+# Valid values are either "yes" or "no"
+# Default is: no
+dependencies: yes
+
+# Allow package downgrade?
+# Valid values are either "yes" or "no"
+# Default is: no
+downgrade: no
+
+# Allow package rebuild?
+# Valid values are either "yes" or "no"
+# Default is: no
+rebuild: no
+
+# Make possible to continue if one or more packages fail to build?
+# Valid values are either "yes" or "no"
+# Default is: no
+keep-going: yes
+
+# Allow new USE flags?
+# Valid values are either "yes" or "no"
+# Default is: no
+new-useflags: yes
+
+# Allow removed USE flags?
+# Valid values are either "yes" or "no"
+# Default is: no
+removed-useflags: yes
+
+# Package pre execution script hook
+# Valid value is path to executable file
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# pkgpre: /home/fabio/repos/entropy/services/matter_examples/pkgpre.sh
+
+# Package build post execution script hook, executed for each package
+# Valid value is path to executable file
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# pkgpost: /home/fabio/repos/entropy/services/matter_examples/pkgpost.sh
+
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# MATTER_PORTAGE_FAILED_PACKAGE_NAME = exact name (atom, CPV) of the failing
+# package, the one that triggered the buildfail hook.
+# MATTER_PORTAGE_REPOSITORY = Portage repository from where the package
+# comes from
+# MATTER_PORTAGE_BUILD_LOG_DIR = directory containing all the build logs of
+# the failed package
+buildfail: /particles/hooks/buildfail.sh
+
+# For more info regarding exported environment variables, please see:
+# matter --help

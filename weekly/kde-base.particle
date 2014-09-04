@@ -1,0 +1,395 @@
+# Entropy Matter, Automated Entropy Packages Build Service, example spec file
+
+# List of packages required to be built.
+# Comma separated, example: app-foo/bar, bar-baz/foo
+# Mandatory, cannot be empty
+packages:
+	kde-base/akonadiconsole,
+	kde-base/akregator,
+	kde-base/amor,
+	kde-base/analitza,
+	kde-base/ark,
+	kde-base/attica,
+	kde-base/audiocd-kio,
+	kde-base/blinken,
+	kde-base/blogilo,
+	kde-base/bomber,
+	kde-base/bovo,
+	kde-base/calendarjanitor,
+	kde-base/cantor,
+	kde-base/cervisia,
+	kde-base/contactthemeeditor,
+	kde-base/dolphin,
+	kde-base/dolphin-plugins,
+	kde-base/dragon,
+	kde-base/drkonqi,
+	kde-base/ffmpegthumbs,
+	kde-base/filelight,
+	kde-base/freespacenotifier,
+	kde-base/granatier,
+	kde-base/gwenview,
+	kde-base/jovie,
+	kde-base/juk,
+	kde-base/kabcclient,
+	kde-base/kaccessible,
+	kde-base/kactivities,
+	kde-base/kaddressbook,
+	kde-base/kajongg,
+	kde-base/kalarm,
+	kde-base/kalgebra,
+	kde-base/kalzium,
+	kde-base/kamera,
+	kde-base/kanagram,
+	kde-base/kapman,
+	kde-base/kapptemplate,
+	kde-base/kate,
+	kde-base/katepart,
+	kde-base/katomic,
+	kde-base/kblackbox,
+	kde-base/kblocks,
+	kde-base/kbounce,
+	kde-base/kbreakout,
+	kde-base/kbruch,
+	kde-base/kcachegrind,
+	kde-base/kcalc,
+	kde-base/kcharselect,
+	kde-base/kcheckpass,
+	kde-base/kcminit,
+	kde-base/kcmshell,
+	kde-base/kcolorchooser,
+	kde-base/kcontrol,
+	kde-base/kcron,
+	kde-base/kdeaccessibility-meta,
+	kde-base/kdeadmin-meta,
+	kde-base/kdeartwork-colorschemes,
+	kde-base/kdeartwork-desktopthemes,
+	kde-base/kdeartwork-emoticons,
+	kde-base/kdeartwork-iconthemes,
+	kde-base/kdeartwork-kscreensaver,
+	kde-base/kdeartwork-meta,
+	kde-base/kdeartwork-styles,
+	kde-base/kdeartwork-wallpapers,
+	kde-base/kdeartwork-weatherwallpapers,
+	kde-base/kde-base-artwork,
+	kde-base/kdebase-cursors,
+	kde-base/kdebase-data,
+	kde-base/kdebase-desktoptheme,
+	kde-base/kdebase-kioslaves,
+	kde-base/kdebase-menu,
+	kde-base/kdebase-menu-icons,
+	kde-base/kdebase-meta,
+	kde-base/kdebase-pam,
+	kde-base/kdebase-runtime-meta,
+	kde-base/kdebase-startkde,
+	kde-base/kdebindings-meta,
+	kde-base/kdebugdialog,
+	kde-base/kde-dev-scripts,
+	kde-base/kde-dev-utils,
+	kde-base/kdeedu-meta,
+	kde-base/kde-env,
+	kde-base/kdegames-meta,
+	kde-base/kdegraphics-meta,
+	kde-base/kdegraphics-mobipocket,
+	kde-base/kdelibs,
+	kde-base/kde-meta,
+	kde-base/kdemultimedia-meta,
+	kde-base/kdenetwork-filesharing,
+	kde-base/kdenetwork-meta,
+	kde-base/kdepasswd,
+	kde-base/kdepim-common-libs,
+	kde-base/kdepim-icons,
+	kde-base/kdepim-kresources,
+	kde-base/kdepimlibs,
+	kde-base/kdepim-meta,
+	kde-base/kdepim-runtime,
+	kde-base/kdepim-strigi-analyzer,
+	kde-base/kdeplasma-addons,
+	kde-base/kdesdk-kioslaves,
+	kde-base/kdesdk-meta,
+	kde-base/kdesdk-strigi-analyzer,
+	kde-base/kdesu,
+	kde-base/kdetoys-meta,
+	kde-base/kdeutils-meta,
+	kde-base/kde-wallpapers,
+	kde-base/kdewebdev-meta,
+	kde-base/kdf,
+	kde-base/kdialog,
+	kde-base/kdiamond,
+	kde-base/kdm,
+	kde-base/kdontchangethehostname,
+	kde-base/keditbookmarks,
+	kde-base/keditfiletype,
+	kde-base/kephal,
+	kde-base/kfile,
+	kde-base/kfilereplace,
+	kde-base/kfind,
+	kde-base/kfloppy,
+	kde-base/kfmclient,
+	kde-base/kfourinline,
+	kde-base/kgamma,
+	kde-base/kgeography,
+	kde-base/kget,
+	kde-base/kglobalaccel,
+	kde-base/kgoldrunner,
+	kde-base/kgpg,
+	kde-base/khangman,
+	kde-base/khelpcenter,
+	kde-base/khotkeys,
+	kde-base/kiconfinder,
+	kde-base/kig,
+	kde-base/kigo,
+	kde-base/killbots,
+	kde-base/kimagemapeditor,
+	kde-base/kimgio,
+	kde-base/kinfocenter,
+	kde-base/kioclient,
+	kde-base/kiriki,
+	kde-base/kiten,
+	kde-base/kjots,
+	kde-base/kjumpingcube,
+	kde-base/kleopatra,
+	kde-base/klettres,
+	kde-base/klickety,
+	kde-base/klines,
+	kde-base/klinkstatus,
+	kde-base/klipper,
+	kde-base/kmag,
+	kde-base/kmahjongg,
+	kde-base/kmail,
+	kde-base/kmenuedit,
+	kde-base/kmimetypefinder,
+	kde-base/kmines,
+	kde-base/kmix,
+	kde-base/kmousetool,
+	kde-base/kmouth,
+	kde-base/kmplot,
+	kde-base/knavalbattle,
+	kde-base/knetattach,
+	kde-base/knetwalk,
+	kde-base/knewstuff,
+	kde-base/knode,
+	kde-base/knotes,
+	kde-base/knotify,
+	kde-base/kolf,
+	kde-base/kollision,
+	kde-base/kolourpaint,
+	kde-base/kommander,
+	kde-base/kompare,
+	kde-base/konq-plugins,
+	kde-base/konqueror,
+	kde-base/konquest,
+	kde-base/konsole,
+	kde-base/konsolekalendar,
+	kde-base/kontact,
+	kde-base/kopete,
+	kde-base/korganizer,
+	kde-base/kpasswdserver,
+	kde-base/kpat,
+	kde-base/kppp,
+	kde-base/kquitapp,
+	kde-base/krdc,
+	kde-base/kreadconfig,
+	kde-base/kremotecontrol,
+	kde-base/kreversi,
+	kde-base/krfb,
+	kde-base/krossjava,
+	kde-base/krosspython,
+	kde-base/kruler,
+	kde-base/krunner,
+	kde-base/ksaneplugin,
+	kde-base/kscd,
+	kde-base/kscreensaver,
+	kde-base/kshisen,
+	kde-base/ksirk,
+	kde-base/ksmserver,
+	kde-base/ksnakeduel,
+	kde-base/ksnapshot,
+	kde-base/kspaceduel,
+	kde-base/ksplash,
+	kde-base/ksquares,
+	kde-base/kstars,
+	kde-base/kstart,
+	kde-base/kstartupconfig,
+	kde-base/kstyles,
+	kde-base/ksudoku,
+	kde-base/ksysguard,
+	kde-base/ksystemlog,
+	kde-base/ksystraycmd,
+	kde-base/kteatime,
+	kde-base/ktimer,
+	kde-base/ktimetracker,
+	kde-base/ktimezoned,
+	kde-base/ktnef,
+	kde-base/ktouch,
+	kde-base/ktraderclient,
+	kde-base/ktuberling,
+	kde-base/kturtle,
+	kde-base/ktux,
+	kde-base/kubrick,
+	kde-base/kuiserver,
+	kde-base/kurifilter-plugins,
+	kde-base/kuser,
+	kde-base/kwalletd,
+	kde-base/kwalletmanager,
+	kde-base/kwin,
+	kde-base/kwordquiz,
+	kde-base/kwrite,
+	kde-base/kwrited,
+	kde-base/libkcddb,
+	kde-base/libkcompactdisc,
+	kde-base/libkdcraw,
+	kde-base/libkdeedu,
+	kde-base/libkdegames,
+	kde-base/libkexiv2,
+	kde-base/libkipi,
+	kde-base/libkmahjongg,
+	kde-base/libkomparediff2,
+	kde-base/libkonq,
+	kde-base/libksane,
+	kde-base/libkworkspace,
+	kde-base/liboxygenstyle,
+	kde-base/libplasmaclock,
+	kde-base/libplasmagenericshell,
+	kde-base/libtaskmanager,
+	kde-base/lokalize,
+	kde-base/lskat,
+	kde-base/marble,
+	kde-base/mplayerthumbs,
+	kde-base/nepomuk,
+	kde-base/nepomuk-core,
+	kde-base/nepomuk-widgets,
+	kde-base/nsplugins,
+	kde-base/okteta,
+	kde-base/okular,
+	kde-base/oxygen-icons,
+	kde-base/pairs,
+	kde-base/palapeli,
+	kde-base/parley,
+	kde-base/perlkde,
+	kde-base/perlqt,
+	kde-base/phonon-kde,
+	kde-base/picmi,
+	kde-base/plasma-apps,
+	kde-base/plasma-runtime,
+	kde-base/plasma-workspace,
+	kde-base/powerdevil,
+	kde-base/poxml,
+	kde-base/print-manager,
+	kde-base/pykde4,
+	kde-base/qguiplatformplugin_kde,
+	kde-base/renamedlg-plugins,
+	kde-base/rocs,
+	kde-base/smokegen,
+	kde-base/smokekde,
+	kde-base/smokeqt,
+	kde-base/solid-actions-kcm,
+	kde-base/solid-runtime,
+	kde-base/step,
+	kde-base/superkaramba,
+	kde-base/svgpart,
+	kde-base/sweeper,
+	kde-base/systemsettings,
+	kde-base/thumbnailers,
+	kde-base/umbrello,
+
+	kde-base/kdeaccessibility-meta
+	kde-base/kde-l10n
+	kde-base/kde-meta
+	kde-base/kdebindings-meta
+	kde-base/kdepim-meta
+	kde-base/kdesdk-meta
+	kde-base/kdewebdev-meta,
+
+	kde-base/cervisia
+	kde-base/kfloppy
+	kde-base/kppp
+	kde-base/kremotecontrol
+	kde-base/krossjava
+	kde-base/smokegen
+	kde-base/smokeqt,
+
+# Entropy repository where to commit packages
+# Mandatory, cannot be empty
+repository: rogentos-testing
+
+# Provide custom build arguments to Portage.
+# Default is: --verbose --nospinner
+build-args: --verbose --oneshot --nospinner --quiet-build=y --quiet-fail --fail-clean=y --complete-graph
+
+# Allow Source Package Manager (Portage) repository change?
+# Valid values are either "yes" or "no"
+# Default is: no
+spm-repository-change: no
+
+# In case of Source Package Manager repository change, allow
+# execution if the original repository does not contain
+# the package anymore?
+# Valid values are either "yes" or "no"
+# Default is: no
+spm-repository-change-if-upstreamed: yes
+
+# Allow compiling package even if it's not actually installed on system?
+# Valid values are either "yes" or "no"
+# Default is: no
+not-installed: no
+
+# Allow dependencies to be pulled in?
+# Valid values are either "yes" or "no"
+# Default is: no
+dependencies: yes
+
+# Allow package downgrade?
+# Valid values are either "yes" or "no"
+# Default is: no
+downgrade: no
+
+# Allow package rebuild?
+# Valid values are either "yes" or "no"
+# Default is: no
+rebuild: no
+
+# Make possible to continue if one or more packages fail to build?
+# Valid values are either "yes" or "no"
+# Default is: no
+keep-going: yes
+
+# Allow new USE flags?
+# Valid values are either "yes" or "no"
+# Default is: no
+new-useflags: yes
+
+# Allow removed USE flags?
+# Valid values are either "yes" or "no"
+# Default is: no
+removed-useflags: yes
+
+# Package pre execution script hook
+# Valid value is path to executable file
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# pkgpre: /home/fabio/repos/entropy/services/matter_examples/pkgpre.sh
+
+# Package build post execution script hook, executed for each package
+# Valid value is path to executable file
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# pkgpost: /home/fabio/repos/entropy/services/matter_examples/pkgpost.sh
+
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# MATTER_PORTAGE_FAILED_PACKAGE_NAME = exact name (atom, CPV) of the failing
+# package, the one that triggered the buildfail hook.
+# MATTER_PORTAGE_REPOSITORY = Portage repository from where the package
+# comes from
+# MATTER_PORTAGE_BUILD_LOG_DIR = directory containing all the build logs of
+# the failed package
+buildfail: /particles/hooks/buildfail.sh
+
+# For more info regarding exported environment variables, please see:
+# matter --help

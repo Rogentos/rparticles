@@ -1,0 +1,386 @@
+# Entropy Matter, Automated Entropy Packages Build Service, example spec file
+
+# List of packages required to be built.
+# Comma separated, example: app-foo/bar, bar-baz/foo
+# Mandatory, cannot be empty
+packages:
+	dev-ruby/RubyInline,
+	dev-ruby/abstract,
+	dev-ruby/actionmailer,
+	dev-ruby/actionpack,
+	dev-ruby/activemodel,
+	dev-ruby/activerecord,
+	dev-ruby/activeresource,
+	dev-ruby/activesupport,
+	dev-ruby/addressable,
+	dev-ruby/allison,
+	dev-ruby/amatch,
+	dev-ruby/amazon-ec2,
+	dev-ruby/annoy,
+	dev-ruby/archive-tar-minitar,
+	dev-ruby/arel,
+	dev-ruby/arel,
+	dev-ruby/arel,
+	dev-ruby/attic,
+	dev-ruby/aws-s3,
+	dev-ruby/aws-sdk,
+	dev-ruby/bacon,
+	dev-ruby/bcrypt-ruby,
+	dev-ruby/bluecloth,
+	dev-ruby/bsearch,
+	dev-ruby/builder,
+	dev-ruby/builder,
+	dev-ruby/bundler,
+	dev-ruby/bunny,
+	dev-ruby/caesars,
+	dev-ruby/capistrano,
+	dev-ruby/capybara,
+	dev-ruby/childlabor,
+	dev-ruby/childprocess,
+	dev-ruby/chronic,
+	dev-ruby/chunky_png,
+	dev-ruby/cmdparse,
+	dev-ruby/coderay,
+	dev-ruby/coffee-rails,
+	dev-ruby/coffee-script,
+	dev-ruby/coffee-script-source,
+	dev-ruby/color,
+	dev-ruby/crack,
+	dev-ruby/daemon_controller,
+	dev-ruby/daemons,
+	dev-ruby/diff-lcs,
+	dev-ruby/domain_name,
+	dev-ruby/drydock,
+	dev-ruby/echoe,
+	dev-ruby/erubis,
+	dev-ruby/eventmachine,
+	dev-ruby/execjs,
+	dev-ruby/exifr,
+	dev-ruby/extlib,
+	dev-ruby/facter,
+	dev-ruby/fakefs,
+	dev-ruby/fakeweb,
+	dev-ruby/faraday,
+	dev-ruby/fast_xs,
+	dev-ruby/fattr,
+	dev-ruby/fcgi,
+	dev-ruby/ffi,
+	dev-ruby/file-tail,
+	dev-ruby/flexmock,
+	dev-ruby/fssm,
+	dev-ruby/gem_plugin,
+	dev-ruby/gherkin,
+	dev-ruby/gibbler,
+	dev-ruby/gruff,
+	dev-ruby/haml,
+	dev-ruby/hashie,
+	dev-ruby/hiera,
+	dev-ruby/highline,
+	dev-ruby/hike,
+	dev-ruby/hoe,
+	dev-ruby/hoe-seattlerb,
+	dev-ruby/hpricot,
+	dev-ruby/htmlentities,
+	dev-ruby/httparty,
+	dev-ruby/httpauth,
+	dev-ruby/httpclient,
+	dev-ruby/i18n,
+	dev-ruby/ipaddress,
+	dev-ruby/journey,
+	dev-ruby/jquery-rails,
+	dev-ruby/json,
+	dev-ruby/jwt,
+	dev-ruby/kirbybase,
+	dev-ruby/kissfft,
+	dev-ruby/levenshtein,
+	dev-ruby/libxml,
+	dev-ruby/listen,
+	dev-ruby/litc,
+	dev-ruby/locale,
+	dev-ruby/log4r,
+	dev-ruby/mail,
+	dev-ruby/map,
+	dev-ruby/maruku,
+	dev-ruby/matchy,
+	dev-ruby/mecab-ruby,
+	dev-ruby/mechanize,
+	dev-ruby/memcache-client,
+	dev-ruby/merb-assets,
+	dev-ruby/merb-core,
+	dev-ruby/merb-haml,
+	dev-ruby/merb-helpers,
+	dev-ruby/merb-param-protection,
+	dev-ruby/metaclass,
+	dev-ruby/metaid,
+	dev-ruby/mime-types,
+	dev-ruby/mini_magick,
+	dev-ruby/mixlib-authentication,
+	dev-ruby/mixlib-cli,
+	dev-ruby/mixlib-config,
+	dev-ruby/mixlib-log,
+	dev-ruby/mixlib-shellout,
+	dev-ruby/mocha,
+	dev-ruby/msgpack,
+	dev-ruby/multi_json,
+	dev-ruby/multi_xml,
+	dev-ruby/multipart-post,
+	dev-ruby/mustache,
+	dev-ruby/mysql2,
+	dev-ruby/mysql-ruby,
+	dev-ruby/narray,
+	dev-ruby/net-http-digest_auth,
+	dev-ruby/net-http-persistent,
+	dev-ruby/net-scp,
+	dev-ruby/net-sftp,
+	dev-ruby/net-ssh,
+	dev-ruby/net-ssh-gateway,
+	dev-ruby/nokogiri,
+	dev-ruby/ntlm-http,
+	dev-ruby/oauth,
+	dev-ruby/oauth2,
+	dev-ruby/ohai,
+	dev-ruby/open4,
+	dev-ruby/pg,
+	dev-ruby/pkg-config,
+	dev-ruby/plist,
+	dev-ruby/png,
+	dev-ruby/podcast,
+	dev-ruby/polyglot,
+	dev-ruby/prawn,
+	dev-ruby/prawn-core,
+	dev-ruby/prawn-layout,
+	dev-ruby/prawn-security,
+	dev-ruby/racc,
+	dev-ruby/rack,
+	dev-ruby/rack,
+	dev-ruby/rack-cache,
+	dev-ruby/rack-mount,
+	dev-ruby/rack-mount,
+	dev-ruby/rack-protection,
+	dev-ruby/rack-ssl,
+	dev-ruby/rack-test,
+	dev-ruby/radius,
+	dev-ruby/rails,
+	dev-ruby/railties,
+	dev-ruby/rake,
+	dev-ruby/rake-compiler,
+	dev-ruby/rake-remote_task,
+	dev-ruby/rb-inotify,
+	dev-ruby/rbtree,
+	dev-ruby/rcairo,
+	dev-ruby/rdiscount,
+	dev-ruby/rdoc,
+	dev-ruby/rdtool,
+	dev-ruby/redcloth,
+	dev-ruby/refe,
+	dev-ruby/rest-client,
+	dev-ruby/rexical,
+	dev-ruby/right_http_connection,
+	dev-ruby/rmagick,
+	dev-ruby/robots,
+	dev-ruby/rr,
+	dev-ruby/rspec,
+	dev-ruby/rspec,
+	dev-ruby/rspec-core,
+	dev-ruby/rspec-expectations,
+	dev-ruby/rspec-mocks,
+	dev-ruby/rspec-rails,
+	dev-ruby/ruby-atk,
+	dev-ruby/ruby-gdkpixbuf2,
+	dev-ruby/ruby-gettext,
+	dev-ruby/ruby-gio2,
+	dev-ruby/ruby-glib2,
+	dev-ruby/ruby-gnome2,
+	dev-ruby/ruby-goocanvas,
+	dev-ruby/ruby-gstreamer,
+	dev-ruby/ruby-gtk2,
+	dev-ruby/ruby-gtksourceview,
+	dev-ruby/ruby-hmac,
+	dev-ruby/ruby-inifile,
+	dev-ruby/ruby-ldap,
+	dev-ruby/ruby-mp3info,
+	dev-ruby/ruby-net-ldap,
+	dev-ruby/ruby-openid,
+	dev-ruby/ruby-pango,
+	dev-ruby/ruby-poppler,
+	dev-ruby/ruby-prof,
+	dev-ruby/ruby-progressbar,
+	dev-ruby/ruby-romkan,
+	dev-ruby/ruby-rsvg,
+	dev-ruby/ruby-shout,
+	dev-ruby/ruby-tcpwrap,
+	dev-ruby/ruby-termios,
+	dev-ruby/ruby-vte,
+	dev-ruby/ruby-xslt,
+	dev-ruby/ruby-yadis,
+	dev-ruby/ruby_parser,
+	dev-ruby/rubyforge,
+	dev-ruby/rubygems,
+	dev-ruby/rubypants,
+	dev-ruby/rubyzip,
+	dev-ruby/rye,
+	dev-ruby/samuel,
+	dev-ruby/sass,
+	dev-ruby/sass-rails,
+	dev-ruby/selenium-webdriver,
+	dev-ruby/serialport,
+	dev-ruby/session,
+	dev-ruby/sexp_processor,
+	dev-ruby/sexp_processor,
+	dev-ruby/sfl,
+	dev-ruby/shorturl,
+	dev-ruby/shotgun,
+	dev-ruby/shoulda,
+	dev-ruby/simple_oauth,
+	dev-ruby/sinatra,
+	dev-ruby/slop,
+	dev-ruby/snmplib,
+	dev-ruby/sparklines,
+	dev-ruby/spork,
+	dev-ruby/sprockets,
+	dev-ruby/sprockets,
+	dev-ruby/sqlite3,
+	dev-ruby/stomp,
+	dev-ruby/storable,
+	dev-ruby/subexec,
+	dev-ruby/syntax,
+	dev-ruby/sysinfo,
+	dev-ruby/systemu,
+	dev-ruby/term-ansicolor,
+	dev-ruby/test-spec,
+	dev-ruby/test-unit,
+	dev-ruby/test-unit-rr,
+	dev-ruby/test_declarative,
+	dev-ruby/text-hyphen,
+	dev-ruby/textpow,
+	dev-ruby/thor,
+	dev-ruby/tidy-ext,
+	dev-ruby/tidy_table,
+	dev-ruby/tilt,
+	dev-ruby/tins,
+	dev-ruby/tmail,
+	dev-ruby/transaction-simple,
+	dev-ruby/treetop,
+	dev-ruby/trollop,
+	dev-ruby/trollop,
+	dev-ruby/tryouts,
+	dev-ruby/twitter,
+	dev-ruby/tzinfo,
+	dev-ruby/uglifier,
+	dev-ruby/ultraviolet,
+	dev-ruby/unf,
+	dev-ruby/unf_ext,
+	dev-ruby/uuidtools,
+	dev-ruby/vlad,
+	dev-ruby/webrobots,
+	dev-ruby/will_paginate,
+	dev-ruby/wirble,
+	dev-ruby/xml-simple,
+	dev-ruby/xpath,
+	dev-ruby/yajl-ruby,
+	dev-ruby/yard,
+	dev-ruby/zentest:0
+
+# Enforce stable or unstable packages on emerge.
+# yes = only stable packages are accepted
+# no  = both stable and unstable packages are accepted
+# inherit = inherit portage make.conf.* settings for ACCEPT_KEYWORDS
+# Valid values are either "yes" or "no", "inherit"
+# Default is: inherit
+stable: inherit
+
+# Entropy repository where to commit packages
+# Mandatory, cannot be empty
+repository: rogentos-testing
+
+# Provide custom build arguments to Portage.
+# Default is: --verbose --nospinner
+build-args: --verbose --oneshot --nospinner --quiet-build=y --quiet-fail --fail-clean=y --complete-graph
+
+# Allow Source Package Manager (Portage) repository change?
+# Valid values are either "yes" or "no"
+# Default is: no
+spm-repository-change: no
+
+# In case of Source Package Manager repository change, allow
+# execution if the original repository does not contain
+# the package anymore?
+# Valid values are either "yes" or "no"
+# Default is: no
+spm-repository-change-if-upstreamed: yes
+
+# Allow compiling package even if it's not actually installed on system?
+# Valid values are either "yes" or "no"
+# Default is: no
+not-installed: no
+
+# Allow soft-blockers in the merge queue? Packages will be unmerged if yes.
+# Valid values are either "yes" or "no"
+# Default is: yes
+soft-blocker: yes
+
+# Allow package unmerges in the merge queue? Packages will be unmerged if yes.
+# Valid values are either "yes" or "no"
+# Default is: yes
+unmerge: yes
+
+# Allow dependencies to be pulled in?
+# Valid values are either "yes" or "no"
+# Default is: no
+dependencies: yes
+
+# Allow package downgrade?
+# Valid values are either "yes" or "no"
+# Default is: no
+downgrade: no
+
+# Allow package rebuild?
+# Valid values are either "yes" or "no"
+# Default is: no
+rebuild: no
+
+# Make possible to continue if one or more packages fail to build?
+# Valid values are either "yes" or "no"
+# Default is: no
+keep-going: yes
+
+# Allow new USE flags?
+# Valid values are either "yes" or "no"
+# Default is: no
+new-useflags: yes
+
+# Allow removed USE flags?
+# Valid values are either "yes" or "no"
+# Default is: no
+removed-useflags: yes
+
+# Package pre execution script hook
+# Valid value is path to executable file
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# pkgpre: /home/fabio/repos/entropy/services/matter_examples/pkgpre.sh
+
+# Package build post execution script hook, executed for each package
+# Valid value is path to executable file
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# pkgpost: /home/fabio/repos/entropy/services/matter_examples/pkgpost.sh
+
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# MATTER_PORTAGE_FAILED_PACKAGE_NAME = exact name (atom, CPV) of the failing
+# package, the one that triggered the buildfail hook.
+# MATTER_PORTAGE_REPOSITORY = Portage repository from where the package
+# comes from
+# MATTER_PORTAGE_BUILD_LOG_DIR = directory containing all the build logs of
+# the failed package
+buildfail: /particles/hooks/buildfail.sh
+
+# For more info regarding exported environment variables, please see:
+# matter --help

@@ -1,0 +1,405 @@
+# Entropy Matter, Automated Entropy Packages Build Service, example spec file
+
+# List of packages required to be built.
+# Comma separated, example: app-foo/bar, bar-baz/foo
+# Mandatory, cannot be empty
+packages:
+	dev-libs/389-adminutil,
+	dev-libs/DFB++,
+	dev-libs/DirectFB,
+	dev-libs/STLport,
+	dev-libs/ace,
+	dev-libs/apr,
+	dev-libs/apr-util,
+	dev-libs/argtable,
+	dev-libs/atk,
+	dev-libs/beecrypt,
+	dev-libs/bglibs,
+	dev-libs/blitz,
+	dev-libs/boehm-gc,
+	dev-libs/boost,
+	dev-libs/botan,
+	dev-libs/cdk,
+	dev-libs/cgicc,
+	dev-libs/check,
+	dev-libs/chmlib,
+	dev-libs/clearsilver,
+	dev-libs/cloog,
+	dev-libs/cloog-ppl,
+	dev-libs/confuse,
+	dev-libs/cryptlib,
+	dev-libs/crypto++,
+	dev-libs/cvector,
+	dev-libs/cxxtools,
+	dev-libs/cyberjack,
+	dev-libs/cyrus-sasl,
+	dev-libs/d0_blind_id,
+	dev-libs/darts,
+	dev-libs/dbus-c++,
+	dev-libs/dbus-glib,
+	dev-libs/dietlibc,
+	dev-libs/dotconf,
+	dev-libs/dvutil,
+	dev-libs/e_dbus,
+	dev-libs/eb,
+	dev-libs/ecore,
+	dev-libs/eet,
+	dev-libs/eeze,
+	dev-libs/efreet,
+	dev-libs/eina,
+	dev-libs/eio,
+	dev-libs/elfio,
+	dev-libs/elfutils,
+	dev-libs/embryo,
+	dev-libs/eventlog,
+	dev-libs/expat,
+	dev-libs/fampp2,
+	dev-libs/fcgi,
+	dev-libs/ferrisloki,
+	dev-libs/ffcall,
+	dev-libs/folks,
+	dev-libs/fribidi,
+	dev-libs/g-wrap,
+	dev-libs/gdl,
+	dev-libs/gdl,
+	dev-libs/gdome2,
+	dev-libs/geoip,
+	dev-libs/gf2x,
+	dev-libs/girara,
+	dev-libs/gjs,
+	dev-libs/glib,
+	dev-libs/glib,
+	dev-libs/gmetadom,
+	dev-libs/gmime,
+	dev-libs/gmime,
+	dev-libs/gmime,
+	dev-libs/gmp,
+	dev-libs/gobject-introspection,
+	dev-libs/gobject-introspection-common,
+	dev-libs/grantlee,
+	dev-libs/guiloader,
+	dev-libs/guiloader-c++,
+	dev-libs/http-fetcher,
+	dev-libs/hyphen,
+	dev-libs/icu,
+	dev-libs/iksemel,
+	dev-libs/ilbc-rfc3951,
+	dev-libs/iniparser,
+	dev-libs/intel-common,
+	dev-libs/isl,
+	dev-libs/jemalloc,
+	dev-libs/jrtplib,
+	dev-libs/json-c,
+	dev-libs/json-glib,
+	dev-libs/jsoncpp,
+	dev-libs/jthread,
+	dev-libs/judy,
+	dev-libs/keybinder,
+	dev-libs/keybinder,
+	dev-libs/klibc,
+	dev-libs/kpathsea,
+	dev-libs/kqoauth,
+	dev-libs/legousbtower,
+	dev-libs/leveldb,
+	dev-libs/libIDL,
+	dev-libs/libaio,
+	dev-libs/libassuan,
+	dev-libs/libatasmart,
+	dev-libs/libatomic_ops,
+	dev-libs/libattica,
+	dev-libs/libax25,
+	dev-libs/libbrahe,
+	dev-libs/libbsd,
+	dev-libs/libbulletml,
+	dev-libs/libburn,
+	dev-libs/libcdio,
+	dev-libs/libchewing,
+	dev-libs/libcitadel,
+	dev-libs/libconfig,
+	dev-libs/libcoyotl,
+	dev-libs/libcroco,
+	dev-libs/libdaemon,
+	dev-libs/libdbusmenu,
+	dev-libs/libdbusmenu-qt,
+	dev-libs/libdivsufsort,
+	dev-libs/libdnet,
+	dev-libs/libdnsres,
+	dev-libs/libdshconfig,
+	dev-libs/libebml,
+	dev-libs/libedit,
+	dev-libs/libee,
+	dev-libs/libestr,
+	dev-libs/libev,
+	dev-libs/libevent,
+	dev-libs/libevocosm,
+	dev-libs/libexplain,
+	dev-libs/libezV24,
+	dev-libs/libf2c,
+	dev-libs/libffi,
+	dev-libs/libg15,
+	dev-libs/libg15render,
+	dev-libs/libgalago,
+	dev-libs/libgamin,
+	dev-libs/libgcrypt,
+	dev-libs/libgdata,
+	dev-libs/libgee,
+	dev-libs/libgee,
+	dev-libs/libgeier,
+	dev-libs/libgpg-error,
+	dev-libs/libgringotts,
+	dev-libs/libgusb,
+	dev-libs/libgweather,
+	dev-libs/libhome,
+	dev-libs/libical,
+	dev-libs/libindicate,
+	dev-libs/libindicate-qt,
+	dev-libs/libindicator,
+	dev-libs/libindicator,
+	dev-libs/libisoburn,
+	dev-libs/libisofs,
+	dev-libs/libksba,
+	dev-libs/liblazy,
+	dev-libs/liblightscribe,
+	dev-libs/liblinebreak,
+	dev-libs/liblogging,
+	dev-libs/liblognorm,
+	dev-libs/libmaa,
+	dev-libs/libmal,
+	dev-libs/libmateweather,
+	dev-libs/libmba,
+	dev-libs/libmcrypt,
+	dev-libs/libmcs,
+	dev-libs/libmemcache,
+	dev-libs/libmimedir,
+	dev-libs/libmirage,
+	dev-libs/libmix,
+	dev-libs/libmoe,
+	dev-libs/libmowgli,
+	dev-libs/libmowgli,
+	dev-libs/libnatspec,
+	dev-libs/libnl,
+	dev-libs/libnl,
+	dev-libs/libofx,
+	dev-libs/liboil,
+	dev-libs/liboobs,
+	dev-libs/liboop,
+	dev-libs/libotf,
+	dev-libs/libowfat,
+	dev-libs/libp11,
+	dev-libs/libpcre,
+	dev-libs/libpeas,
+	dev-libs/libpipeline,
+	dev-libs/libpqxx,
+	dev-libs/libpthread-stubs,
+	dev-libs/librep,
+	dev-libs/libroadnav,
+	dev-libs/librra,
+	dev-libs/librtfcomp,
+	dev-libs/libsigc++,
+	dev-libs/libsigc++,
+	dev-libs/libsigsegv,
+	dev-libs/libsodium,
+	dev-libs/libstroke,
+	dev-libs/libsuinput,
+	dev-libs/libtar,
+	dev-libs/libtasn1,
+	dev-libs/libtecla,
+	dev-libs/libtommath,
+	dev-libs/libunique,
+	dev-libs/libunique,
+	dev-libs/libusb-compat,
+	dev-libs/libuv,
+	dev-libs/libverto,
+	dev-libs/libvformat,
+	dev-libs/libwbxml,
+	dev-libs/libx86,
+	dev-libs/libx86emu,
+	dev-libs/libxdg-basedir,
+	dev-libs/libxml2,
+	dev-libs/libxslt,
+	dev-libs/libyaml,
+	dev-libs/libzeitgeist,
+	dev-libs/libzip,
+	dev-libs/link-grammar,
+	dev-libs/lockdev,
+	dev-libs/log4cpp,
+	dev-libs/log4cxx,
+	dev-libs/lzo,
+	dev-libs/m17n-lib,
+	dev-libs/maloc,
+	dev-libs/matrixssl,
+	dev-libs/mini-xml,
+	dev-libs/mongo-c-driver,
+	dev-libs/mozldap,
+	dev-libs/mpc,
+	dev-libs/mpfr,
+	dev-libs/nettle,
+	dev-libs/newt,
+	dev-libs/nspr,
+	dev-libs/nss,
+	dev-libs/ntl,
+	dev-libs/oniguruma,
+	dev-libs/openct,
+	dev-libs/openobex,
+	dev-libs/opensc,
+	dev-libs/openssl,
+	dev-libs/openssl,
+	dev-libs/ossp-uuid,
+	dev-libs/pcc-libs,
+	dev-libs/pcre++,
+	dev-libs/pkcs11-helper,
+	dev-libs/poco,
+	dev-libs/popt,
+	dev-libs/ppl,
+	dev-libs/protobuf,
+	dev-libs/pslib,
+	dev-libs/ptexenc,
+	dev-libs/pth,
+	dev-libs/pugixml,
+	dev-libs/qjson,
+	dev-libs/qoauth,
+	dev-libs/qrosscore,
+	dev-libs/quazip,
+	dev-libs/rasqal,
+	dev-libs/re2,
+	dev-libs/redland,
+	dev-libs/rlog,
+	dev-libs/rremove,
+	dev-libs/seed,
+	dev-libs/serd,
+	dev-libs/shared-desktop-ontologies,
+	dev-libs/shhopt,
+	dev-libs/skalibs,
+	dev-libs/skyutils,
+	dev-libs/soprano,
+	dev-libs/sord,
+	dev-libs/stfl,
+	dev-libs/suikyo,
+	dev-libs/svrcore,
+	dev-libs/syck,
+	dev-libs/tinyxml,
+	dev-libs/tinyxml2,
+	dev-libs/tntnet,
+	dev-libs/totem-pl-parser,
+	dev-libs/tre,
+	dev-libs/tvision,
+	dev-libs/ucl,
+	dev-libs/ucommon,
+	dev-libs/udis86,
+	dev-libs/uriparser,
+	dev-libs/userspace-rcu,
+	dev-libs/ustr,
+	dev-libs/uthash,
+	dev-libs/uulib,
+	dev-libs/vala-common,
+	dev-libs/vanessa-adt,
+	dev-libs/vanessa-logger,
+	dev-libs/wayland,
+	dev-libs/wnn7sdk,
+	dev-libs/xalan-c,
+	dev-libs/xapian,
+	dev-libs/xapian-bindings,
+	dev-libs/xerces-c,
+	dev-libs/xmlrpc-c,
+	dev-libs/xmlrpc-epi,
+	dev-libs/xmlsec,
+	dev-libs/xplc,
+	dev-libs/xqilla,
+	dev-libs/yajl,
+	dev-libs/yaz,
+	dev-libs/zthread,
+	dev-libs/zziplib,
+
+# Enforce stable or unstable packages on emerge.
+# yes = only stable packages are accepted
+# no  = both stable and unstable packages are accepted
+# inherit = inherit portage make.conf.* settings for ACCEPT_KEYWORDS
+# Valid values are either "yes" or "no", "inherit"
+# Default is: inherit
+stable: inherit
+
+# Entropy repository where to commit packages
+# Mandatory, cannot be empty
+repository: rogentos-testing
+
+# Provide custom build arguments to Portage.
+# Default is: --verbose --nospinner
+build-args: --verbose --oneshot --nospinner --quiet-build=y --quiet-fail --fail-clean=y --complete-graph
+
+# Allow Source Package Manager (Portage) repository change?
+# Valid values are either "yes" or "no"
+# Default is: no
+spm-repository-change: no
+
+# In case of Source Package Manager repository change, allow
+# execution if the original repository does not contain
+# the package anymore?
+# Valid values are either "yes" or "no"
+# Default is: no
+spm-repository-change-if-upstreamed: yes
+
+# Allow compiling package even if it's not actually installed on system?
+# Valid values are either "yes" or "no"
+# Default is: no
+not-installed: no
+
+# Allow dependencies to be pulled in?
+# Valid values are either "yes" or "no"
+# Default is: no
+dependencies: yes
+
+# Allow package downgrade?
+# Valid values are either "yes" or "no"
+# Default is: no
+downgrade: no
+
+# Allow package rebuild?
+# Valid values are either "yes" or "no"
+# Default is: no
+rebuild: no
+
+# Make possible to continue if one or more packages fail to build?
+# Valid values are either "yes" or "no"
+# Default is: no
+keep-going: yes
+
+# Allow new USE flags?
+# Valid values are either "yes" or "no"
+# Default is: no
+new-useflags: yes
+
+# Allow removed USE flags?
+# Valid values are either "yes" or "no"
+# Default is: no
+removed-useflags: yes
+
+# Package pre execution script hook
+# Valid value is path to executable file
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# pkgpre: /home/fabio/repos/entropy/services/matter_examples/pkgpre.sh
+
+# Package build post execution script hook, executed for each package
+# Valid value is path to executable file
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# pkgpost: /home/fabio/repos/entropy/services/matter_examples/pkgpost.sh
+
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# MATTER_PORTAGE_FAILED_PACKAGE_NAME = exact name (atom, CPV) of the failing
+# package, the one that triggered the buildfail hook.
+# MATTER_PORTAGE_REPOSITORY = Portage repository from where the package
+# comes from
+# MATTER_PORTAGE_BUILD_LOG_DIR = directory containing all the build logs of
+# the failed package
+buildfail: /particles/hooks/buildfail.sh
+
+# For more info regarding exported environment variables, please see:
+# matter --help

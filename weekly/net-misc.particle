@@ -1,0 +1,336 @@
+# Entropy Matter, Automated Entropy Packages Build Service, example spec file
+
+# List of packages required to be built.
+# Comma separated, example: app-foo/bar, bar-baz/foo
+# Mandatory, cannot be empty
+packages:
+	net-misc/adjtimex,
+	net-misc/aget,
+	net-misc/aggregate,
+	net-misc/aggregate-flim,
+	net-misc/aiccu,
+	net-misc/apt-cacher-ng,
+	net-misc/aria2,
+	net-misc/asterisk,
+	net-misc/asterisk-core-sounds,
+	net-misc/asterisk-extra-sounds,
+	net-misc/asterisk-moh-opsound,
+	net-misc/astmanproxy,
+	net-misc/autossh,
+	net-misc/axel,
+	net-misc/balance,
+	net-misc/bird,
+	net-misc/blogtk,
+	net-misc/bridge-utils,
+	net-misc/bsdwhois,
+	net-misc/bti,
+	net-misc/bwwhois,
+	net-misc/cadaver,
+	net-misc/capi4hylafax,
+	net-misc/cbqinit,
+	net-misc/cfengine,
+	net-misc/cfengine,
+	net-misc/charm,
+	net-misc/chrony,
+	net-misc/clamz,
+	net-misc/clipgrab,
+	net-misc/clockspeed,
+	net-misc/clockspeed-conf,
+	net-misc/clusterssh,
+	net-misc/connect,
+	net-misc/connman,
+	net-misc/corkscrew,
+	net-misc/curl,
+	net-misc/dhcp,
+	net-misc/dhcpcd,
+	net-misc/dhcping,
+	net-misc/dibbler,
+	net-misc/directvnc,
+	net-misc/drivel,
+	net-misc/dropbear,
+	net-misc/dropbox,
+	net-misc/efax,
+	net-misc/emirror,
+	net-misc/fakeidentd,
+	net-misc/fatrat,
+	net-misc/fcoe-utils,
+	net-misc/fmirror,
+	net-misc/freerapid,
+	net-misc/freerdp,
+	net-misc/gip,
+	net-misc/gnome-blog,
+	net-misc/gnome-rdp,
+	net-misc/gns3,
+	net-misc/gofish,
+	net-misc/goog-sitemapgen,
+	net-misc/googlecl,
+	net-misc/grdesktop,
+	net-misc/grive,
+	net-misc/gsasl,
+	net-misc/gupnp-tools,
+	net-misc/gwget,
+	net-misc/gwhois,
+	net-misc/gwibber,
+	net-misc/hashcash,
+	net-misc/hotot,
+	net-misc/hsc,
+	net-misc/htbinit,
+	net-misc/htpdate,
+	net-misc/httptunnel,
+	net-misc/icaclient,
+	net-misc/icecast,
+	net-misc/ices,
+	net-misc/ifenslave,
+	net-misc/ipcalc,
+	net-misc/iperf,
+	net-misc/iplist,
+	net-misc/ipsc,
+	net-misc/iputils,
+	net-misc/ipv6calc,
+	net-misc/ipx-utils,
+	net-misc/jigdo,
+	net-misc/jumpgate,
+	net-misc/jwhois,
+	net-misc/keychain,
+	net-misc/knemo,
+	net-misc/knock,
+	net-misc/kvpnc,
+	net-misc/l7-filter-userspace,
+	net-misc/l7-protocols,
+	net-misc/linux-identd,
+	net-misc/lksctp-tools,
+	net-misc/lldpad,
+	net-misc/logmein-hamachi,
+	net-misc/mdidentd,
+	net-misc/mediatomb,
+	net-misc/memcached,
+	net-misc/midentd,
+	net-misc/mindterm,
+	net-misc/miniupnpd,
+	net-misc/miredo,
+	net-misc/mobile-broadband-provider-info,
+	net-misc/modemmanager,
+	net-misc/monmotha,
+	net-misc/mosh,
+	net-misc/nat-traverse,
+	net-misc/ndisc6,
+	net-misc/neatx,
+	net-misc/nemesis,
+	net-misc/netdate,
+	net-misc/netifrc,
+
+	# Netkit stuff
+	net-misc/netkit-fingerd
+	net-misc/netkit-rsh
+	net-misc/netkit-rusers
+	net-misc/netkit-rwall
+	net-misc/netkit-rwho
+	net-misc/netkit-talk
+	net-misc/netkit-telnetd
+	net-misc/netkit-timed,
+
+	net-misc/netpipes,
+	net-misc/netsed,
+	net-misc/netsniff-ng,
+	net-misc/netstat-nat,
+
+	# NetworkManager stuff
+	net-misc/networkmanager
+	net-misc/networkmanager-openconnect
+	net-misc/networkmanager-openswan
+	net-misc/networkmanager-openvpn
+	net-misc/networkmanager-pptp
+	net-misc/networkmanager-sstp
+	net-misc/networkmanager-vpnc,
+
+	net-misc/npapi-sdk,
+	net-misc/ntp,
+	net-misc/nut-monitor,
+	net-misc/nx,
+	net-misc/nxclient,
+	net-misc/nxnode,
+	net-misc/nxserver-freeedition,
+	net-misc/nxserver-freenx,
+	net-misc/oidentd,
+	net-misc/omniORB,
+	net-misc/openconnect,
+	net-misc/openssh,
+	net-misc/openswan,
+	net-misc/openvpn,
+	net-misc/packETH,
+	net-misc/pavuk,
+	net-misc/pen,
+	net-misc/plowshare,
+	net-misc/portfwd,
+	net-misc/proxychains,
+	net-misc/proxytunnel,
+	net-misc/ps3mediaserver,
+	net-misc/putty,
+	net-misc/pyload,
+	net-misc/pymazon,
+	net-misc/quagga,
+	net-misc/rabbitmq-server,
+	net-misc/raccess,
+	net-misc/radvd,
+	net-misc/rdate,
+	net-misc/rdesktop,
+	net-misc/redir,
+	net-misc/remmina,
+	net-misc/rsync,
+	net-misc/scponly,
+	net-misc/secpanel,
+	net-misc/sendfile,
+	net-misc/ser,
+	net-misc/ser2net,
+	net-misc/shmux,
+	net-misc/sipcalc,
+	net-misc/sipsak,
+	net-misc/sitecopy,
+	net-misc/smb4k,
+	net-misc/snarf,
+	net-misc/sobby,
+	net-misc/socat,
+	net-misc/sock,
+	net-misc/sparkleshare,
+	net-misc/spread,
+	net-misc/ssh-askpass-fullscreen,
+	net-misc/ssvnc,
+	net-misc/stone,
+	net-misc/streamtuner,
+	net-misc/streamtuner2,
+	net-misc/stunnel,
+	net-misc/suite3270,
+	net-misc/taylor-uucp,
+	net-misc/teamviewer,
+	net-misc/tiers,
+	net-misc/tightvnc,
+	net-misc/tinc,
+	net-misc/tipcutils,
+	net-misc/tn5250,
+	net-misc/tokyotyrant,
+	net-misc/tor,
+	net-misc/tsclient,
+	net-misc/tucan,
+	net-misc/ucarp,
+	net-misc/udpcast,
+	net-misc/unison,
+	net-misc/unison,
+	net-misc/unix2tcp,
+	net-misc/urlview,
+	net-misc/usbip,
+	net-misc/utelnetd,
+	net-misc/valve,
+	net-misc/vconfig,
+	net-misc/vde,
+	net-misc/vidalia,
+	net-misc/vinagre,
+	net-misc/vino,
+	net-misc/vmnet,
+	net-misc/vmpsd,
+	net-misc/vncrec,
+	net-misc/vncsnapshot,
+	net-misc/vpnc,
+	net-misc/vtun,
+	net-misc/wakeonlan,
+	net-misc/wget,
+	net-misc/whatmask,
+	net-misc/whois,
+	net-misc/wicd,
+	net-misc/wol,
+	net-misc/wput,
+	net-misc/x11-ssh-askpass,
+	net-misc/x2goclient,
+	net-misc/x2goserver,
+	net-misc/yaydl,
+	net-misc/youtube-dl,
+	net-misc/youtube-viewer,
+	net-misc/ytalk,
+	net-misc/zebedee,
+	net-misc/zssh,
+	net-misc/zsync,
+
+# Entropy repository where to commit packages
+# Mandatory, cannot be empty
+repository: rogentos-testing
+
+# Provide custom build arguments to Portage.
+# Default is: --verbose --nospinner
+build-args: --verbose --oneshot --nospinner --quiet-build=y --quiet-fail --fail-clean=y --complete-graph
+
+# Allow Source Package Manager (Portage) repository change?
+# Valid values are either "yes" or "no"
+# Default is: no
+spm-repository-change: no
+
+# In case of Source Package Manager repository change, allow
+# execution if the original repository does not contain
+# the package anymore?
+# Valid values are either "yes" or "no"
+# Default is: no
+spm-repository-change-if-upstreamed: yes
+
+# Allow compiling package even if it's not actually installed on system?
+# Valid values are either "yes" or "no"
+# Default is: no
+not-installed: no
+
+# Allow dependencies to be pulled in?
+# Valid values are either "yes" or "no"
+# Default is: no
+dependencies: yes
+
+# Allow package downgrade?
+# Valid values are either "yes" or "no"
+# Default is: no
+downgrade: no
+
+# Allow package rebuild?
+# Valid values are either "yes" or "no"
+# Default is: no
+rebuild: no
+
+# Make possible to continue if one or more packages fail to build?
+# Valid values are either "yes" or "no"
+# Default is: no
+keep-going: yes
+
+# Allow new USE flags?
+# Valid values are either "yes" or "no"
+# Default is: no
+new-useflags: yes
+
+# Allow removed USE flags?
+# Valid values are either "yes" or "no"
+# Default is: no
+removed-useflags: yes
+
+# Package pre execution script hook
+# Valid value is path to executable file
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# pkgpre: /home/fabio/repos/entropy/services/matter_examples/pkgpre.sh
+
+# Package build post execution script hook, executed for each package
+# Valid value is path to executable file
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# pkgpost: /home/fabio/repos/entropy/services/matter_examples/pkgpost.sh
+
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# MATTER_PORTAGE_FAILED_PACKAGE_NAME = exact name (atom, CPV) of the failing
+# package, the one that triggered the buildfail hook.
+# MATTER_PORTAGE_REPOSITORY = Portage repository from where the package
+# comes from
+# MATTER_PORTAGE_BUILD_LOG_DIR = directory containing all the build logs of
+# the failed package
+buildfail: /particles/hooks/buildfail.sh
+
+# For more info regarding exported environment variables, please see:
+# matter --help

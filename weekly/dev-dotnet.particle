@@ -1,0 +1,133 @@
+# Entropy Matter, Automated Entropy Packages Build Service, example spec file
+
+# List of packages required to be built.
+# Comma separated, example: app-foo/bar, bar-baz/foo
+# Mandatory, cannot be empty
+packages:
+	dev-dotnet/art-sharp,
+	dev-dotnet/atk-sharp,
+	dev-dotnet/dbus-sharp,
+	dev-dotnet/dbus-sharp-glib,
+	dev-dotnet/gconf-sharp,
+	dev-dotnet/gdk-sharp,
+	dev-dotnet/gio-sharp,
+	dev-dotnet/gkeyfile-sharp,
+	dev-dotnet/glade-sharp,
+	dev-dotnet/glib-sharp,
+	dev-dotnet/gnome-desktop-sharp,
+	dev-dotnet/gnome-keyring-sharp,
+	dev-dotnet/gnome-sharp,
+	dev-dotnet/gnomevfs-sharp,
+	dev-dotnet/gsf-sharp,
+	dev-dotnet/gtk-dotnet-sharp,
+	dev-dotnet/gtk-sharp,
+	dev-dotnet/gtk-sharp-beans,
+	dev-dotnet/gtk-sharp-gapi,
+	dev-dotnet/gtkhtml-sharp,
+	dev-dotnet/gudev-sharp,
+	dev-dotnet/ikvm-bin,
+	dev-dotnet/libgdiplus,
+	dev-dotnet/log4net,
+	dev-dotnet/mono-addins,
+	dev-dotnet/mono-nat,
+	dev-dotnet/monotorrent,
+	dev-dotnet/nant,
+	dev-dotnet/ndesk-dbus,
+	dev-dotnet/ndesk-dbus-glib,
+	dev-dotnet/nini,
+	dev-dotnet/notify-sharp,
+	dev-dotnet/pango-sharp,
+	dev-dotnet/pe-format,
+	dev-dotnet/rsvg-sharp,
+	dev-dotnet/smartirc4net,
+	dev-dotnet/taglib-sharp,
+	dev-dotnet/vte-sharp,
+	dev-dotnet/webkit-sharp,
+	dev-dotnet/wnck-sharp,
+	dev-dotnet/xsp,
+
+# Entropy repository where to commit packages
+# Mandatory, cannot be empty
+repository: rogentos-testing
+
+# Provide custom build arguments to Portage.
+# Default is: --verbose --nospinner
+build-args: --verbose --oneshot --nospinner --quiet-build=y --quiet-fail --fail-clean=y --complete-graph
+
+# Allow Source Package Manager (Portage) repository change?
+# Valid values are either "yes" or "no"
+# Default is: no
+spm-repository-change: no
+
+# In case of Source Package Manager repository change, allow
+# execution if the original repository does not contain
+# the package anymore?
+# Valid values are either "yes" or "no"
+# Default is: no
+spm-repository-change-if-upstreamed: yes
+
+# Allow compiling package even if it's not actually installed on system?
+# Valid values are either "yes" or "no"
+# Default is: no
+not-installed: no
+
+# Allow dependencies to be pulled in?
+# Valid values are either "yes" or "no"
+# Default is: no
+dependencies: yes
+
+# Allow package downgrade?
+# Valid values are either "yes" or "no"
+# Default is: no
+downgrade: no
+
+# Allow package rebuild?
+# Valid values are either "yes" or "no"
+# Default is: no
+rebuild: no
+
+# Make possible to continue if one or more packages fail to build?
+# Valid values are either "yes" or "no"
+# Default is: no
+keep-going: yes
+
+# Allow new USE flags?
+# Valid values are either "yes" or "no"
+# Default is: no
+new-useflags: yes
+
+# Allow removed USE flags?
+# Valid values are either "yes" or "no"
+# Default is: no
+removed-useflags: yes
+
+# Package pre execution script hook
+# Valid value is path to executable file
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# pkgpre: /home/fabio/repos/entropy/services/matter_examples/pkgpre.sh
+
+# Package build post execution script hook, executed for each package
+# Valid value is path to executable file
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# pkgpost: /home/fabio/repos/entropy/services/matter_examples/pkgpost.sh
+
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# MATTER_PORTAGE_FAILED_PACKAGE_NAME = exact name (atom, CPV) of the failing
+# package, the one that triggered the buildfail hook.
+# MATTER_PORTAGE_REPOSITORY = Portage repository from where the package
+# comes from
+# MATTER_PORTAGE_BUILD_LOG_DIR = directory containing all the build logs of
+# the failed package
+buildfail: /particles/hooks/buildfail.sh
+
+# For more info regarding exported environment variables, please see:
+# matter --help

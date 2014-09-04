@@ -1,0 +1,223 @@
+# Entropy Matter, Automated Entropy Packages Build Service, example spec file
+
+# List of packages required to be built.
+# Comma separated, example: app-foo/bar, bar-baz/foo
+# Mandatory, cannot be empty
+packages:
+	net-libs/NativeThread,
+	net-libs/adns,
+	net-libs/aqbanking,
+	net-libs/c-client,
+	net-libs/ccrtp,
+	net-libs/courier-authlib,
+	net-libs/daq,
+	net-libs/dslib,
+	net-libs/enet,
+	net-libs/farstream,
+	net-libs/ftplib,
+	net-libs/glib-networking,
+	net-libs/gloox,
+	net-libs/gnet,
+	net-libs/gnome-online-accounts,
+	net-libs/gnutls,
+	net-libs/gsnmp,
+	net-libs/gssdp,
+	net-libs/gtk-vnc,
+	net-libs/gupnp,
+	net-libs/gupnp-av,
+	net-libs/gupnp-igd,
+	net-libs/gupnp-ui,
+	net-libs/iax,
+	net-libs/jreen,
+	net-libs/ldns,
+	net-libs/libasyncns,
+	net-libs/libbluedevil,
+	net-libs/libcapsinetwork,
+	net-libs/libdexter,
+	net-libs/libeXosip,
+	net-libs/libepc,
+	net-libs/libesmtp,
+	net-libs/libetpan,
+	net-libs/libgadu,
+	net-libs/libgmail,
+	net-libs/libgrss,
+	net-libs/libgssglue,
+	net-libs/libident,
+	net-libs/libircclient,
+	net-libs/libkgapi,
+	net-libs/libktorrent,
+	net-libs/liblockfile,
+	net-libs/libmediawiki,
+	net-libs/libmicrohttpd,
+	net-libs/libmnl,
+	net-libs/libmrss,
+	net-libs/libmsn,
+	net-libs/libnatpmp,
+	net-libs/libnet,
+	net-libs/libnet,
+	net-libs/libnetfilter_conntrack,
+	net-libs/libnetfilter_cthelper,
+	net-libs/libnetfilter_cttimeout,
+	net-libs/libnetfilter_log,
+	net-libs/libnetfilter_queue,
+	net-libs/libnfnetlink,
+	net-libs/libnfsidmap,
+	net-libs/libnice,
+	net-libs/libnids,
+	net-libs/libnipper,
+	net-libs/libntlm,
+	net-libs/libnxml,
+	net-libs/liboauth,
+	net-libs/libopkele,
+	net-libs/libosip,
+	net-libs/libotr,
+	net-libs/libpcap,
+	net-libs/libpcapnav,
+	net-libs/libpri,
+	net-libs/libproxy,
+	net-libs/libqmi,
+	net-libs/librpcsecgss,
+	net-libs/librsync,
+	net-libs/libsmi,
+	net-libs/libsocialweb,
+	net-libs/libsoup,
+	net-libs/libsoup-gnome,
+	net-libs/libsrtp,
+	net-libs/libssh,
+	net-libs/libssh2,
+	net-libs/libtirpc,
+	net-libs/libtorrent,
+	net-libs/libupnp,
+	net-libs/libvncserver,
+	net-libs/libwhisker,
+	net-libs/libyahoo2,
+	net-libs/libzapojit,
+	net-libs/libzrtpcpp,
+	net-libs/loudmouth,
+	net-libs/meanwhile,
+	net-libs/miniupnpc,
+	net-libs/nativebiginteger,
+	net-libs/neon,
+	net-libs/net6,
+	net-libs/netwib,
+	net-libs/nodejs,
+	net-libs/obby,
+	net-libs/opal,
+	net-libs/openslp,
+	net-libs/ortp,
+	net-libs/osptoolkit,
+	net-libs/pjsip,
+	net-libs/polarssl,
+	net-libs/ptlib,
+	net-libs/qxmpp,
+	net-libs/rb_libtorrent,
+	net-libs/rest,
+	net-libs/rpc2,
+	net-libs/serf,
+	net-libs/serf,
+	net-libs/socket++,
+	net-libs/sofia-sip,
+	net-libs/telepathy-farstream,
+	net-libs/telepathy-glib,
+	net-libs/telepathy-logger-qt,
+	net-libs/telepathy-qt,
+	net-libs/udns,
+	net-libs/vanessa-socket,
+	net-libs/webkit-gtk,
+	net-libs/webkit-gtk,
+	net-libs/wvstreams,
+	net-libs/zeromq,
+
+# Enforce stable or unstable packages on emerge.
+# yes = only stable packages are accepted
+# no  = both stable and unstable packages are accepted
+# inherit = inherit portage make.conf.* settings for ACCEPT_KEYWORDS
+# Valid values are either "yes" or "no", "inherit"
+# Default is: inherit
+stable: inherit
+
+# Entropy repository where to commit packages
+# Mandatory, cannot be empty
+repository: rogentos-testing
+
+# Provide custom build arguments to Portage.
+# Default is: --verbose --nospinner
+build-args: --verbose --oneshot --nospinner --quiet-build=y --quiet-fail --fail-clean=y --complete-graph
+
+# Allow Source Package Manager (Portage) repository change?
+# Valid values are either "yes" or "no"
+# Default is: no
+spm-repository-change: no
+
+# In case of Source Package Manager repository change, allow
+# execution if the original repository does not contain
+# the package anymore?
+# Valid values are either "yes" or "no"
+# Default is: no
+spm-repository-change-if-upstreamed: yes
+
+# Allow compiling package even if it's not actually installed on system?
+# Valid values are either "yes" or "no"
+# Default is: no
+not-installed: no
+
+# Allow dependencies to be pulled in?
+# Valid values are either "yes" or "no"
+# Default is: no
+dependencies: yes
+
+# Allow package downgrade?
+# Valid values are either "yes" or "no"
+# Default is: no
+downgrade: no
+
+# Allow package rebuild?
+# Valid values are either "yes" or "no"
+# Default is: no
+rebuild: no
+
+# Make possible to continue if one or more packages fail to build?
+# Valid values are either "yes" or "no"
+# Default is: no
+keep-going: yes
+
+# Allow new USE flags?
+# Valid values are either "yes" or "no"
+# Default is: no
+new-useflags: yes
+
+# Allow removed USE flags?
+# Valid values are either "yes" or "no"
+# Default is: no
+removed-useflags: yes
+
+# Package pre execution script hook
+# Valid value is path to executable file
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# pkgpre: /home/fabio/repos/entropy/services/matter_examples/pkgpre.sh
+
+# Package build post execution script hook, executed for each package
+# Valid value is path to executable file
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# pkgpost: /home/fabio/repos/entropy/services/matter_examples/pkgpost.sh
+
+# Env vars:
+# MATTER_PACKAGE_NAMES       = space sep. list of names of the packages
+# that would be built. It does not reflect the name of the failing packages,
+# because they could be just dependencies of them.
+# MATTER_PORTAGE_FAILED_PACKAGE_NAME = exact name (atom, CPV) of the failing
+# package, the one that triggered the buildfail hook.
+# MATTER_PORTAGE_REPOSITORY = Portage repository from where the package
+# comes from
+# MATTER_PORTAGE_BUILD_LOG_DIR = directory containing all the build logs of
+# the failed package
+buildfail: /particles/hooks/buildfail.sh
+
+# For more info regarding exported environment variables, please see:
+# matter --help
