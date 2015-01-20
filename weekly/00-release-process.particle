@@ -6,7 +6,7 @@
 #
 # Bump packages required by the automated release process to work
 packages:
-	app-misc/kogaion-version,
+	app-misc/argent-version,
 
 # Enforce stable or unstable packages on emerge.
 # yes = only stable packages are accepted
